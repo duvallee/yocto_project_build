@@ -1,6 +1,11 @@
 
 /bsp
 /source
+/build-raspberrypi-3b/bitbake-cookerdaemon.log
+/build-raspberrypi-3b/cache/
+/build-raspberrypi-3b/sstate-cache/
+/build-raspberrypi-3b/tmp/
+/build-raspberrypi-3b/bitbake.lock
 
 
 
