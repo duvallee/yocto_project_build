@@ -1,0 +1,10 @@
+
+/bsp
+/source
+/build-raspberrypi-4/bitbake-cookerdaemon.log
+/build-raspberrypi-4/bitbake.lock
+/build-raspberrypi-4/cache/
+/build-raspberrypi-4/sstate-cache/
+/build-raspberrypi-4/tmp/
+
+
