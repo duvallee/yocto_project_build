@@ -1,0 +1,17 @@
+
+/layers/meta-openembedded/
+/layers/meta-qt5/
+/layers/meta-st/meta-st-openstlinux/
+/layers/meta-st/meta-st-stm32mp-addons/
+/layers/meta-st/meta-st-stm32mp/
+/layers/meta-timesys/
+/layers/openembedded-core/
+/build-openstlinuxweston-stm32mp1/bitbake-cookerdaemon.log
+/build-openstlinuxweston-stm32mp1/bitbake.lock
+/build-openstlinuxweston-stm32mp1/cache/
+/build-openstlinuxweston-stm32mp1/conf/sanity_info
+/build-openstlinuxweston-stm32mp1/tmp-glibc/
+/build-openstlinuxweston-stm32mp1/downloads/
+/build-openstlinuxweston-stm32mp1/buildhistory/
+/build-openstlinuxweston-stm32mp1/sstate-cache/
+
