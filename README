@@ -1,1 +1,14 @@
-build for yocto project
+
+wiki site : https://wiki.st.com/stm32mpu/wiki/OpenSTLinux_distribution
+
+download site
+ : repo init -u https://github.com/STMicroelectronics/oe-manifest.git -b refs/tags/openstlinux-20-02-19
+
+DISTRO=openstlinux-weston MACHINE=stm32mp1 source layers/meta-st/scripts/envsetup.sh
+
+bitbake st-image-weston
+bitbake st-image-weston -c populate_sdk
+
+
+
+
