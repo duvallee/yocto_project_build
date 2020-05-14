@@ -17,4 +17,12 @@
 /build-openstlinuxweston-stm32mp1/buildhistory/
 /build-openstlinuxweston-stm32mp1/sstate-cache/
 
+/build-openstlinuxeglfs-stm32mp1/bitbake-cookerdaemon.log
+/build-openstlinuxeglfs-stm32mp1/bitbake.lock
+/build-openstlinuxeglfs-stm32mp1/cache/
+/build-openstlinuxeglfs-stm32mp1/conf/sanity_info
+/build-openstlinuxeglfs-stm32mp1/tmp-glibc/
+/build-openstlinuxeglfs-stm32mp1/downloads/
+/build-openstlinuxeglfs-stm32mp1/buildhistory/
+/build-openstlinuxeglfs-stm32mp1/sstate-cache/
 
