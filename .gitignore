@@ -6,6 +6,7 @@
 /layers/meta-st/meta-st-stm32mp/
 /layers/meta-timesys/
 /layers/openembedded-core/
+/layers/meta-custom/
 /mcu_stm32mp_m4
 /release/
 /build-openstlinuxweston-stm32mp1/bitbake-cookerdaemon.log
