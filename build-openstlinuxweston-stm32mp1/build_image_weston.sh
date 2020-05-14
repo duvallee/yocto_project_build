@@ -53,8 +53,7 @@ function build_end_time()
     then
         mkdir -p ../release
     else
-        rm -rf ../release
-        mkdir -p ../release
+        rm -f ../release/st32mp157c-dk2-basic.img
     fi
 
     if [ ! -e ${SDCARD_SHELL_SCRIPT} ]

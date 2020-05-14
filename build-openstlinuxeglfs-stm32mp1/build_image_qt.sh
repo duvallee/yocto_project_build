@@ -8,7 +8,7 @@ export END_TIME=""
 export TOP_DIR=`pwd`
 export DEPLOY_DIR=${TOP_DIR}/tmp-glibc/deploy/images/stm32mp1/
 export SDCARD_SHELL_SCRIPT=${DEPLOY_DIR}/scripts/create_sdcard_from_flashlayout.sh
-export FLASHLAYOUT_FILE=${DEPLOY_DIR}/flashlayout_st-image-weston/FlashLayout_sdcard_stm32mp157c-dk2-basic.tsv
+export FLASHLAYOUT_FILE=${DEPLOY_DIR}/flashlayout_st-example-image-qt/FlashLayout_sdcard_stm32mp157c-dk2-basic.tsv
 
 # ------------------------------------------------------------------
 # build_start_time
@@ -53,8 +53,7 @@ function build_end_time()
     then
         mkdir -p ../release
     else
-        rm -rf ../release
-        mkdir -p ../release
+        rm -f ../release/st32mp157c-dk2-qt-basic.img
     fi
 
     if [ ! -e ${SDCARD_SHELL_SCRIPT} ]
@@ -63,6 +62,6 @@ function build_end_time()
         exit 0
     fi
     ${SDCARD_SHELL_SCRIPT} ${FLASHLAYOUT_FILE}
-    mv ${DEPLOY_DIR}/flashlayout_st-image-weston_FlashLayout_sdcard_stm32mp157c-dk2-basic.raw ../release/st32mp157c-dk2-basic.img 
+    mv ${DEPLOY_DIR}/flashlayout_st-example-image-qt_FlashLayout_sdcard_stm32mp157c-dk2-basic.raw ../release/st32mp157c-dk2-qt-basic.img 
 }
 
