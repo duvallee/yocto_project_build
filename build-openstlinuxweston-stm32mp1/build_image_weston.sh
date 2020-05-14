@@ -33,10 +33,22 @@ function build_end_time()
 # ------------------------------------------------------------------
 # MAIN LOOP
 {
+    if [ ! -e ../../downloads ]
+    then
+        mkdir -p ../../downloads
+        ln -s ../../downloads downloads
+    fi
+
+    if [ ! -e downloads ]
+    then
+        ln -s ../../downloads downloads
+    fi
+
     build_start_time
     bitbake st-image-weston -c cleanall
     bitbake st-image-weston
     build_end_time
+
     if [ ! -e ../release ]
     then
         mkdir -p ../release

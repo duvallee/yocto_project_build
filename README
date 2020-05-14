@@ -9,10 +9,14 @@ DISTRO=openstlinux-weston MACHINE=stm32mp1 source layers/meta-st/scripts/envsetu
 bitbake st-image-weston
 bitbake st-image-weston -c populate_sdk
 
-st-image-core
+
+
+
+
+DISTRO=openstlinux-eglfs MACHINE=stm32mp1 source layers/meta-st/scripts/envsetup.sh
 st-example-image-qt
-st-example-image-x11
-st-example-image-xfce
+
+
 
 
 
