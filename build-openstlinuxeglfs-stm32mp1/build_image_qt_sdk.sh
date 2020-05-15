@@ -29,7 +29,8 @@ function build_end_time()
 # MAIN LOOP
 {
     build_start_time
-    bitbake st-example-image-qt -c populate_sdk
+#    bitbake st-example-image-qt -c populate_sdk
+    bitbake meta-toolchain-qt5
     build_end_time
 }
 
