@@ -27,3 +27,6 @@
 /build-openstlinuxeglfs-stm32mp1/buildhistory/
 /build-openstlinuxeglfs-stm32mp1/sstate-cache/
 
+/app
+/bsp
+
