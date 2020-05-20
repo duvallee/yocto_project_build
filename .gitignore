@@ -7,4 +7,10 @@
 /build-raspberrypi-4/sstate-cache/
 /build-raspberrypi-4/tmp/
 
+/build-qt-raspberrypi-4/bitbake-cookerdaemon.log
+/build-qt-raspberrypi-4/cache/
+/build-qt-raspberrypi-4/downloads
+/build-qt-raspberrypi-4/sstate-cache/
+/build-qt-raspberrypi-4/tmp-glibc/
+
 
