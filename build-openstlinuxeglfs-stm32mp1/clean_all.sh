@@ -33,6 +33,7 @@ function build_end_time()
     rm -rf cache
     rm -rf sstate-cache
     rm -rf tmp-glibc
+    rm -f bitbake-cookerdaemon.log
     build_end_time
 }
 
