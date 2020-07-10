@@ -2,4 +2,5 @@
 bsp
 layers
 mcu_stm32mp_m4
+release/
 
