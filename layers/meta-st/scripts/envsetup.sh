@@ -2,6 +2,17 @@
 
 unalias -a
 
+#----------------------------------------------
+# add by duvallee.lee 
+#
+alias l='ls -l'
+alias ll='ls -al'
+LS_COLORS="di=00;36:fi=00;37"
+
+META_LAYER_ROOT=layers
+#----------------------------------------------
+
+
 _FORMAT_PATTERN='£-£'
 _SITECONFSAMPLE_PATH=$(dirname $(realpath ${BASH_SOURCE}))
 
@@ -1317,7 +1328,7 @@ _stoe_distrib_check
 #
 if [ -z "${BUILD_DIR}" ] && ! [ -z "$DISTRO" ] && ! [ -z "$MACHINE" ]; then
     # In case DISTRO and MACHINE are provided use them to init BUILD_DIR
-    BUILD_DIR="build-${DISTRO//-}-$MACHINE"
+    BUILD_DIR="build-${DISTRO}-$MACHINE"
 fi
 
 if [ -z "${BUILD_DIR}" ]; then

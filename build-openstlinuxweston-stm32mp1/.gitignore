@@ -1,8 +1,0 @@
-
-bitbake-cookerdaemon.log
-buildhistory/
-cache/
-downloads/
-sstate-cache/
-tmp-glibc/
-
