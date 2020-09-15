@@ -8,7 +8,7 @@ export BUILD_ROOT=`pwd`
 export BUILD_DIR="build-jetson-nano-qspi-sd"
 export BUILD_TMP="tmp"
 export BUILD_BOARD="jetson-nano-qspi-sd"
-export BUILD_IMAGES="core-image-minimal-jetson-nano-qspi-sd.tegraflash.zip"
+export BUILD_IMAGES="core-image-minimal-jetson-nano-qspi-sd.tegraflash.tar.gz"
 
 # ------------------------------------------------------------------
 export DEPLOY_PATH=${BUILD_ROOT}/${BUILD_TMP}/deploy/images/${BUILD_BOARD}
@@ -94,7 +94,7 @@ function build_end_time()
    cp ${DEPLOY_PATH}/${BUILD_IMAGES} ./tmp/.
 
    cd tmp
-   unzip -o ${BUILD_IMAGES}
+   tar -zxvf ${BUILD_IMAGES}
    ./dosdcard.sh
 
    cd ../
