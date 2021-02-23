@@ -34,12 +34,15 @@ function build_end_time()
 # ------------------------------------------------------------------
 # MAIN LOOP
 {
-    build_start_time
+   build_start_time
 
-    bitbake image-raspberry-pi-core -c cleanall
-    bitbake image-raspberry-pi-core
+   if [ "${1}" == "-c" ]
+   then
+      bitbake raspberry-core-image -c cleanall
+   fi
+   bitbake raspberry-core-image
 
-    build_end_time
+   build_end_time
 }
 
 

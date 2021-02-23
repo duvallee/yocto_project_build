@@ -6,6 +6,14 @@
 /build-raspberrypi-4/cache/
 /build-raspberrypi-4/sstate-cache/
 /build-raspberrypi-4/tmp/
+/build-raspberrypi-4/downloads
+
+/build-raspberrypi-4-64/bitbake-cookerdaemon.log
+/build-raspberrypi-4-64/bitbake.lock
+/build-raspberrypi-4-64/cache/
+/build-raspberrypi-4-64/sstate-cache/
+/build-raspberrypi-4-64/tmp/
+/build-raspberrypi-4-64/downloads
 
 /build-qt-raspberrypi-4/bitbake-cookerdaemon.log
 /build-qt-raspberrypi-4/cache/

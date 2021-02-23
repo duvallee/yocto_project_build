@@ -1,5 +1,3 @@
-
-
 #!/bin/bash
 #
 #
@@ -34,14 +32,22 @@ function build_end_time()
 # ------------------------------------------------------------------
 # MAIN LOOP
 {
+   # ===============================================================
+   if [ ! -e ../../downloads ]
+   then
+      mkdir -p ../../downloads
+      ln -s ../../downloads downloads
+   fi
+ 
+   if [ ! -e downloads ]
+   then
+      ln -s ../../downloads downloads
+   fi
+
+   # ===============================================================
    build_start_time
 
-   rm -f bitbake-cookerdaemon.log
-   rm -f bitbake.lock
-   rm -f bitbake.sock
-   rm -rf cache
-   rm -rf sstate-cache
-   rm -rf tmp
+   bitbake raspberry-core-image -c populate_sdk
 
    build_end_time
 }

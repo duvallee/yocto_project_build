@@ -34,12 +34,11 @@ function build_end_time()
 # ------------------------------------------------------------------
 # MAIN LOOP
 {
-    build_start_time
+   build_start_time
 
-    bitbake image-raspberry-pi-x11 -c cleanall
-    bitbake image-raspberry-pi-x11
+   bitbake raspberry-core-image -c populate_sdk
 
-    build_end_time
+   build_end_time
 }
 
 

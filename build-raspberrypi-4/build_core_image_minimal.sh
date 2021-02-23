@@ -34,12 +34,15 @@ function build_end_time()
 # ------------------------------------------------------------------
 # MAIN LOOP
 {
-    build_start_time
+   build_start_time
 
-    bitbake core-image-minimal -c cleanall
-    bitbake core-image-minimal
+   if [ "${1}" == "-c" ]
+   then
+      bitbake core-image-minimal -c cleanall
+   fi
+   bitbake core-image-minimal
 
-    build_end_time
+   build_end_time
 }
 
 
