@@ -28,4 +28,5 @@
 /build-qt-raspberrypi-4-64/downloads
 /build-qt-raspberrypi-4-64/sstate-cache/
 /build-qt-raspberrypi-4-64/tmp-glibc/
+/build-qt-raspberrypi-4-64/tmp/
 
