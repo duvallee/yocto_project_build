@@ -47,7 +47,7 @@ function build_end_time()
 
    build_start_time
 
-   bitbake image-raspberry-pi-qt -c populate_sdk
+   bitbake image-raspberry-pi-qt-sdk -c populate_sdk
 
    build_end_time
 }
