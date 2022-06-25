@@ -60,7 +60,7 @@ popd
 
 pushd .
 cd micro-ros-mcu 
-repo start spotmicro-raspberry-pi-micro-ros 
+repo start spotmicro-raspberry-pi-micro-ros-stm32f401ccu6 
 popd
 
 pushd .
