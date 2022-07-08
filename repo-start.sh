@@ -54,13 +54,13 @@ repo start spotmicro-raspberry-pi
 popd
 
 pushd .
-cd old-mcu  
-repo start spotmicro-raspberry-pi 
+cd simulation  
+repo start spotmicro-raspberry-pi-ros2-foxy 
 popd
 
 pushd .
 cd micro-ros-mcu 
-repo start spotmicro-raspberry-pi-micro-ros-stm32f401ccu6 
+repo start micro-ros-stm32f401ccu6
 popd
 
 pushd .
